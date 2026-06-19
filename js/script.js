@@ -369,14 +369,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // SUPABASE CONFIGURATION INITIALIZATION
   // ==========================================
   function initSupabase() {
-    const url = localStorage.getItem('supabase_url');
+    const url = localStorage.getItem('supabase_url') || 'https://tftfjndtbuadcocfwuwn.supabase.co';
     const key = localStorage.getItem('supabase_key');
     
     if (url && key) {
       try {
         if (window.supabase) {
           supabaseClient = window.supabase.createClient(url, key);
-          console.log("Supabase client initialized successfully.");
+          console.log("Supabase client initialized with URL: " + url);
           checkAuthSession();
         } else {
           console.error("Supabase CDN library not loaded yet.");
@@ -385,7 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Failed to initialize Supabase: ", e);
       }
     } else {
-      console.log("Supabase credentials missing in localStorage. Running in fallback mode.");
+      console.log("Supabase credentials incomplete. Running in fallback mode.");
     }
   }
 
@@ -1065,8 +1065,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (adminDashboardBtn) {
     adminDashboardBtn.addEventListener('click', () => {
-      // Load current inputs from localStorage
-      if (configUrl) configUrl.value = localStorage.getItem('supabase_url') || '';
+      if (configUrl) configUrl.value = localStorage.getItem('supabase_url') || 'https://tftfjndtbuadcocfwuwn.supabase.co';
       if (configKey) configKey.value = localStorage.getItem('supabase_key') || '';
       
       adminDashboardModal.classList.add('open');
