@@ -59,7 +59,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: var(--bg-primary);
-  background-image: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.75)), url('../../../.gemini/antigravity-ide/brain/f099ebaf-1285-418f-aae9-906974ac4c21/hero_bg_1781864775266.png');
+  background-image: linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)), url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=1600');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: radial-gradient(circle at 60% 40%, rgba(0, 0, 0, 0.2) 0%, rgba(10, 10, 10, 0.8) 50%, rgba(10, 10, 10, 0.95) 100%);
+  background: radial-gradient(circle at 60% 40%, rgba(0, 0, 0, 0.1) 0%, rgba(10, 10, 10, 0.55) 50%, rgba(10, 10, 10, 0.75) 100%);
 }
 
 .hero-content {

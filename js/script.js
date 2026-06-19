@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
       type: 'bg',
       selector: '.hero-bg-image',
       local: 'assets/hero_bg.jpg',
-      fallback: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1600'
+      fallback: 'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=1600'
     },
     hair: {
       type: 'img',
@@ -322,17 +322,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Run on page load
   resolveAssetFallbacks();
 
-  // Dynamically resolve body fixed background image (checks for local assets/hero_bg.jpg first)
   function resolveBodyBackground() {
     const testImg = new Image();
     const local = 'assets/hero_bg.jpg';
-    const fallback = 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1600';
+    const fallback = 'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=1600';
     
     testImg.onload = () => {
-      document.body.style.backgroundImage = `linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.75)), url('${local}')`;
+      document.body.style.backgroundImage = `linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)), url('${local}')`;
     };
     testImg.onerror = () => {
-      document.body.style.backgroundImage = `linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.75)), url('${fallback}')`;
+      document.body.style.backgroundImage = `linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)), url('${fallback}')`;
     };
     testImg.src = local;
   }
