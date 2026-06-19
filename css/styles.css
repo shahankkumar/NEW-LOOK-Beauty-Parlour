@@ -59,7 +59,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: var(--bg-primary);
-  background-image: linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)), url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=1600');
+  background-image: linear-gradient(rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.45)), url('https://images.unsplash.com/photo-1621590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1600');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -116,9 +116,9 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
 }
 
 .section-title-wrapper {
@@ -138,7 +138,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
   font-size: 2.8rem;
+  font-weight: 300;
   color: var(--white);
+  letter-spacing: 0.05em;
   position: relative;
   display: inline-block;
   padding-bottom: 1.2rem;
@@ -697,8 +699,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card {
-  background: var(--bg-secondary);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
   border-radius: var(--border-radius-md);
   padding: 2rem;
   position: relative;
@@ -1202,10 +1206,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-card {
-  background: var(--bg-primary);
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border-radius: var(--border-radius-md);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
   transition: var(--transition-smooth);
 }
 
@@ -1800,8 +1806,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-item-card {
-  background: var(--bg-secondary);
-  border: 1px solid rgba(255,255,255,0.03);
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
   border-radius: var(--border-radius-md);
   padding: 2rem;
   display: flex;
@@ -1898,8 +1906,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Timings table */
 .timings-panel {
-  background: var(--bg-secondary);
-  border: 1px solid rgba(255,255,255,0.03);
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
   border-radius: var(--border-radius-lg);
   padding: 3rem;
 }
