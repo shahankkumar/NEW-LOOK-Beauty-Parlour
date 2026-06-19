@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to New Look Beauty Parlour, the ultimate premium luxury beauty salon. Book modern haircuts, styling, bridal makeover packages, spa facials, and luxury nail art.">
+  <meta name="keywords" content="beauty salon, beauty parlour, hair styling, bridal makeup, nail art, facials, skincare, New Look Beauty Parlour, luxury salon">
+  <meta name="author" content="New Look Beauty Parlour">
+  
+  <title>New Look Beauty Parlour | Premium Luxury Beauty Salon</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Header Navigation -->
+  <header class="header" id="headerNav">
+    <div class="container">
+      <a href="#hero" class="logo-wrapper">
+        <img class="logo-img" src="assets/logo.png" alt="New Look Logo">
+        <div class="logo-text">
+          NEW LOOK
+          <span>Beauty Parlour</span>
+        </div>
+      </a>
+      
+      <!-- Desktop Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#promo" class="nav-link">Offers</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#team" class="nav-link">Stylists</a>
+        <a href="#booking" class="nav-link">Book Now</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- CTA Book Button -->
+      <div class="header-actions">
+        <a href="#booking" class="btn btn-secondary" style="padding: 0.6rem 1.4rem; font-size: 0.72rem;">Reserve Slot</a>
+        
+        <!-- Hamburger Menu toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-container">
+      <img class="hero-bg-image" src="assets/hero_bg.jpg" alt="Premium Salon Interior">
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-title-tag">
+          <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--primary-gold);"></i>
+          The Premium Beauty Sanctuary
+        </div>
+        <h1 class="font-serif"><span class="gold-gradient-text">Redefine</span> Your Elegance.</h1>
+        <p class="hero-desc">Experience boutique luxury beauty and wellness treatments tailored uniquely for you. Step in to uncover a radiant, confident version of yourself at New Look Beauty Parlour.</p>
+        <div class="hero-btn-group">
+          <a href="#booking" class="btn btn-primary">
+            Book Appointment
+            <i class="btn-icon" data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+          </a>
+          <a href="#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Floating Action Widgets (WhatsApp & Phone & Admin Console) -->
+  <div class="quick-floating-widgets">
+    <!-- Admin Settings Dashboard Trigger -->
+    <button class="float-btn float-phone" id="adminDashboardBtn" aria-label="Open Admin Console" style="background-color: var(--bg-tertiary); color: var(--primary-gold); border: 1.5px solid var(--glass-border);">
+      <i data-lucide="settings" style="width: 24px; height: 24px;"></i>
+    </button>
+    <a href="https://wa.me/919999999999?text=Hello%20New%20Look%20Beauty%20Parlour,%20I'd%20like%20to%20book%20a%20salon%20session." target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+      <i data-lucide="message-circle" style="width: 24px; height: 24px; fill: currentColor;"></i>
+    </a>
+    <a href="tel:+919999999999" class="float-btn float-phone" aria-label="Call Parlour">
+      <i data-lucide="phone" style="width: 24px; height: 24px; fill: currentColor;"></i>
+    </a>
+  </div>
+
+  <!-- Featured Categories Overview Grid -->
+  <section class="featured-section container" style="margin-top: -5rem; padding-bottom: 5rem; position: relative; z-index: 10;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+      
+      <!-- Category 1 -->
+      <div class="gold-border" style="background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 2.2rem 1.8rem; border-radius: var(--border-radius-md); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <i data-lucide="scissors" style="width: 32px; height: 32px; color: var(--primary-gold); margin-bottom: 1.2rem;"></i>
+        <h3 class="font-serif" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--white);">Hair Couture</h3>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5;">Master cuts, luxury balayage, organic keratin therapies, and bespoke blowouts.</p>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="gold-border" style="background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 2.2rem 1.8rem; border-radius: var(--border-radius-md); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <i data-lucide="flower" style="width: 32px; height: 32px; color: var(--primary-gold); margin-bottom: 1.2rem;"></i>
+        <h3 class="font-serif" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--white);">Skin & Spa</h3>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5;">Hydrating facials, skin tightening procedures, and aromatic massage therapies.</p>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="gold-border" style="background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 2.2rem 1.8rem; border-radius: var(--border-radius-md); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <i data-lucide="crown" style="width: 32px; height: 32px; color: var(--primary-gold); margin-bottom: 1.2rem;"></i>
+        <h3 class="font-serif" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--white);">Bridal Glow</h3>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5;">Premium wedding makeovers, HD contour makeup, hair design, and styling.</p>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="gold-border" style="background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 2.2rem 1.8rem; border-radius: var(--border-radius-md); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <i data-lucide="sparkle" style="width: 32px; height: 32px; color: var(--primary-gold); margin-bottom: 1.2rem;"></i>
+        <h3 class="font-serif" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--white);">Luxury Nails</h3>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5;">Premium gel extensions, intricate 3D nail art, and calming paraffin pedicures.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Service Catalog & Interactive Search -->
+  <section class="services-section fade-in-section" id="services">
+    <div class="container">
+      
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Luxurious Menu</span>
+        <h2 class="section-title font-serif">Signature Salon Services</h2>
+      </div>
+
+      <div class="services-catalog-wrapper">
+        <div class="catalog-header">
+          <!-- Live Service Search Bar -->
+          <div class="search-box-wrapper">
+            <i class="search-icon" data-lucide="search"></i>
+            <input type="text" class="search-input" placeholder="Search services (e.g. blowout, pedicure, facial)..." aria-label="Search Salon Services">
+          </div>
+
+          <!-- Dynamic Category Tabs -->
+          <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">All Services</button>
+            <button class="tab-btn" data-filter="hair">Hair Couture</button>
+            <button class="tab-btn" data-filter="skin">Skin & Spa</button>
+            <button class="tab-btn" data-filter="makeup">Bridal & Makeup</button>
+            <button class="tab-btn" data-filter="nails">Nail Art</button>
+          </div>
+        </div>
+
+        <!-- Service Item Cards Grid -->
+        <div class="services-grid">
+          
+          <!-- Hair 1 -->
+          <div class="service-card" data-category="hair">
+            <div class="service-card-header">
+              <h3 class="service-title">Haircut & Signature Blowout</h3>
+            </div>
+            <div class="service-info">
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="clock"></i> 45 Mins
+              </span>
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="user"></i> Junior/Senior Stylist
+              </span>
+            </div>
+            <p class="service-desc">Precision haircut custom-tailored to face contour, paired with a wash, conditioning treatment, and a glossy, bouncy signature blowout finish.</p>
+            <div class="service-footer">
+              <span class="service-category-badge">Hair</span>
+              <a class="service-book-btn" data-service="Haircut & Signature Blowout">
+                Book Now
+                <i class="arrow-icon" data-lucide="chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hair 2 -->
+          <div class="service-card" data-category="hair">
+            <div class="service-card-header">
+              <h3 class="service-title">Balayage & Couture Highlights</h3>
+            </div>
+            <div class="service-info">
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="clock"></i> 180 Mins
+              </span>
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="user"></i> Color Specialist
+              </span>
+            </div>
+            <p class="service-desc">French hand-painted highlights providing soft, natural, sun-kissed dimensions, customized gloss toner, and color-shield deep hydration therapy.</p>
+            <div class="service-footer">
+              <span class="service-category-badge">Hair</span>
+              <a class="service-book-btn" data-service="Balayage & Couture Highlights">
+                Book Now
+                <i class="arrow-icon" data-lucide="chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Skin 1 -->
+          <div class="service-card" data-category="skin">
+            <div class="service-card-header">
+              <h3 class="service-title">HydraGlow Luxury Facial</h3>
+            </div>
+            <div class="service-info">
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="clock"></i> 75 Mins
+              </span>
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="user"></i> Aesthetician
+              </span>
+            </div>
+            <p class="service-desc">Multi-step advanced facial utilizing micro-dermabrasion, deep pore vacuum extractions, custom nutrient infusions, and a cooling hyaluronic gel mask.</p>
+            <div class="service-footer">
+              <span class="service-category-badge">Skin</span>
+              <a class="service-book-btn" data-service="HydraGlow Luxury Facial">
+                Book Now
+                <i class="arrow-icon" data-lucide="chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Skin 2 -->
+          <div class="service-card" data-category="skin">
+            <div class="service-card-header">
+              <h3 class="service-title">Radiant Gold Glow Spa</h3>
+            </div>
+            <div class="service-info">
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="clock"></i> 60 Mins
+              </span>
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="user"></i> Spa Therapist
+              </span>
+            </div>
+            <p class="service-desc">Bespoke luxury skin brightener utilizing 24-karat pure gold foil sheets, cellular renewal serums, relaxing shoulder massage, and herbal steam.</p>
+            <div class="service-footer">
+              <span class="service-category-badge">Skin</span>
+              <a class="service-book-btn" data-service="Radiant Gold Glow Spa">
+                Book Now
+                <i class="arrow-icon" data-lucide="chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Makeup 1 -->
+          <div class="service-card" data-category="makeup">
+            <div class="service-card-header">
+              <h3 class="service-title">HD Royal Bridal Makeover</h3>
+            </div>
+            <div class="service-info">
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="clock"></i> 240 Mins
+              </span>
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="user"></i> Master Makeup Artist
+              </span>
+            </div>
+            <p class="service-desc">Complete wedding package including flawless HD contouring, mink lashes, custom bridal hairstyle, drape setting, jewelry fitting, and touch-up kit.</p>
+            <div class="service-footer">
+              <span class="service-category-badge">Bridal</span>
+              <a class="service-book-btn" data-service="HD Royal Bridal Makeover">
+                Book Now
+                <i class="arrow-icon" data-lucide="chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Makeup 2 -->
+          <div class="service-card" data-category="makeup">
+            <div class="service-card-header">
+              <h3 class="service-title">Red Carpet Evening Makeup</h3>
+            </div>
+            <div class="service-info">
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="clock"></i> 90 Mins
+              </span>
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="user"></i> Makeup Artist
+              </span>
+            </div>
+            <p class="service-desc">Glamorous evening makeup look complete with customized eye shadow styling, flawless skin base, lashes, lip contour, and long-wear setting mist.</p>
+            <div class="service-footer">
+              <span class="service-category-badge">Makeup</span>
+              <a class="service-book-btn" data-service="Red Carpet Evening Makeup">
+                Book Now
+                <i class="arrow-icon" data-lucide="chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Nails 1 -->
+          <div class="service-card" data-category="nails">
+            <div class="service-card-header">
+              <h3 class="service-title">Couture Gel Nail Extensions</h3>
+            </div>
+            <div class="service-info">
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="clock"></i> 120 Mins
+              </span>
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="user"></i> Nail Technician
+              </span>
+            </div>
+            <p class="service-desc">Full set of luxury gel nail extensions with length sculpting, choice of solid gel colors, and custom nourishing cuticle oil treatments.</p>
+            <div class="service-footer">
+              <span class="service-category-badge">Nail Art</span>
+              <a class="service-book-btn" data-service="Couture Gel Nail Extensions">
+                Book Now
+                <i class="arrow-icon" data-lucide="chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Nails 2 -->
+          <div class="service-card" data-category="nails">
+            <div class="service-card-header">
+              <h3 class="service-title">Bespoke 3D Art & Manicure</h3>
+            </div>
+            <div class="service-info">
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="clock"></i> 60 Mins
+              </span>
+              <span class="service-info-item">
+                <i class="service-info-icon" data-lucide="user"></i> Nail Artist
+              </span>
+            </div>
+            <p class="service-desc">Classic manicure session paired with luxury hand scrubs, followed by custom hand-painted 3D art patterns, chrome powders, or gold foil gems on 4 nails.</p>
+            <div class="service-footer">
+              <span class="service-category-badge">Nail Art</span>
+              <a class="service-book-btn" data-service="Bespoke 3D Art & Manicure">
+                Book Now
+                <i class="arrow-icon" data-lucide="chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offer Promo Banner -->
+  <section class="featured-promo-section fade-in-section" id="promo">
+    <div class="container">
+      <div class="promo-container">
+        
+        <!-- Promo Image wrapper -->
+        <div class="promo-img-wrapper">
+          <span class="promo-badge">Limited Time Offer</span>
+          <img class="promo-img" data-fallback-id="bridal" src="assets/bridal.jpg" alt="Luxury Bridal Package Makeover">
+        </div>
+        
+        <!-- Promo Content description -->
+        <div class="promo-content">
+          <span class="section-subtitle" style="text-align: left; margin: 0;">Exclusive Promotion</span>
+          <h3 class="font-serif">The Royal Bridal Glow Ritual</h3>
+          <p class="promo-desc">Make your special day absolutely magical. Book our all-inclusive HD Bridal Makeup and pre-wedding skin prep ritual today and get a complimentary luxury manicure spa.</p>
+          
+          <div class="promo-points">
+            <div class="promo-point-item">
+              <i class="point-icon" data-lucide="check-circle-2"></i>
+              <span>High Definition Airbrush Makeup</span>
+            </div>
+            <div class="promo-point-item">
+              <i class="point-icon" data-lucide="check-circle-2"></i>
+              <span>Flawless 24K Gold Pre-Prep Facial</span>
+            </div>
+            <div class="promo-point-item">
+              <i class="point-icon" data-lucide="check-circle-2"></i>
+              <span>Premium Silk Lash application</span>
+            </div>
+            <div class="promo-point-item">
+              <i class="point-icon" data-lucide="check-circle-2"></i>
+              <span>Hairstyling and Veil Drape setting</span>
+            </div>
+          </div>
+
+          <div class="promo-btn-wrapper">
+            <a href="#booking" class="btn btn-primary featured-book-now-btn" data-service="HD Royal Bridal Makeover">
+              Claim Offer Now
+              <i class="btn-icon" data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stylists / Expert Team Grid -->
+  <section class="team-section fade-in-section" id="team">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Artistic Experts</span>
+        <h2 class="section-title font-serif">Meet Our Elite Stylists</h2>
+      </div>
+
+      <div class="team-grid">
+        
+        <!-- Stylist 1 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" alt="Elena Rostova">
+            <div class="team-socials-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><i data-lucide="facebook" style="width: 14px; height: 14px;"></i></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><i data-lucide="instagram" style="width: 14px; height: 14px;"></i></a>
+              <a href="#" class="team-social-icon" aria-label="Twitter"><i data-lucide="twitter" style="width: 14px; height: 14px;"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Elena Rostova</h3>
+            <p class="team-role">Master Hair Stylist</p>
+            <div class="team-stars">
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stylist 2 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600" alt="Sarah Jenkins">
+            <div class="team-socials-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><i data-lucide="facebook" style="width: 14px; height: 14px;"></i></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><i data-lucide="instagram" style="width: 14px; height: 14px;"></i></a>
+              <a href="#" class="team-social-icon" aria-label="Twitter"><i data-lucide="twitter" style="width: 14px; height: 14px;"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Sarah Jenkins</h3>
+            <p class="team-role">Lead Bridal Makeover Artist</p>
+            <div class="team-stars">
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stylist 3 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Aisha Khan">
+            <div class="team-socials-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><i data-lucide="facebook" style="width: 14px; height: 14px;"></i></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><i data-lucide="instagram" style="width: 14px; height: 14px;"></i></a>
+              <a href="#" class="team-social-icon" aria-label="Twitter"><i data-lucide="twitter" style="width: 14px; height: 14px;"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Aisha Khan</h3>
+            <p class="team-role">Senior Skin Aesthetician</p>
+            <div class="team-stars">
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stylist 4 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&q=80&w=600" alt="Mia Valentina">
+            <div class="team-socials-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><i data-lucide="facebook" style="width: 14px; height: 14px;"></i></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><i data-lucide="instagram" style="width: 14px; height: 14px;"></i></a>
+              <a href="#" class="team-social-icon" aria-label="Twitter"><i data-lucide="twitter" style="width: 14px; height: 14px;"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Mia Valentina</h3>
+            <p class="team-role">Nail Extension Designer</p>
+            <div class="team-stars">
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+              <i class="team-star-icon" data-lucide="star"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Portfolio Gallery (DYNAMICALLY POPULATED VIA SUPABASE) -->
+  <section class="gallery-section fade-in-section" id="gallery">
+    <div class="container">
+      
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Visual Portfolio</span>
+        <h2 class="section-title font-serif">Our Glamour Gallery</h2>
+        <div id="galleryManageWrapper" style="margin-top: 1rem; display: flex; justify-content: center;">
+          <button class="btn btn-secondary" id="openAddPhotoBtn" style="padding: 0.6rem 1.4rem; font-size: 0.72rem; display: inline-flex; align-items: center;">
+            <i data-lucide="image-plus" style="width: 14px; height: 14px; margin-right: 0.4rem;"></i>
+            Add Photo / Video
+          </button>
+        </div>
+      </div>
+
+      <!-- Gallery Media Filter Tabs -->
+      <div class="gallery-tabs-wrapper" style="display: flex; justify-content: center; gap: 0.8rem; margin-bottom: 2.5rem;">
+        <button class="gallery-tab-btn active" data-gallery-filter="all">All Gallery</button>
+        <button class="gallery-tab-btn" data-gallery-filter="photo">Photos</button>
+        <button class="gallery-tab-btn" data-gallery-filter="video">Videos</button>
+      </div>
+
+      <!-- Dynamic Gallery Grid Container -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Fallback static placeholder elements (will be overwritten by script.js but displays if JS fails) -->
+        <div class="gallery-item" data-category="hair">
+          <div class="gallery-image-container">
+            <img class="gallery-img" src="assets/hair.jpg" alt="Signature Balayage Wave">
+          </div>
+          <div class="gallery-overlay">
+            <i class="gallery-zoom-icon" data-lucide="maximize-2"></i>
+            <span class="gallery-cat">Hair Design</span>
+            <h3 class="gallery-title">Signature Balayage Wave</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Overlay -->
+  <div class="lightbox" id="lightboxModal">
+    <button class="lightbox-close" aria-label="Close Lightbox">
+      <i class="lightbox-close-icon" data-lucide="x"></i>
+    </button>
+    <button class="lightbox-nav lightbox-nav-prev" aria-label="Previous Slide">
+      <i class="lightbox-nav-icon" data-lucide="chevron-left"></i>
+    </button>
+    <button class="lightbox-nav lightbox-nav-next" aria-label="Next Slide">
+      <i class="lightbox-nav-icon" data-lucide="chevron-right"></i>
+    </button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrapper">
+        <img class="lightbox-img" src="" alt="Lightbox View">
+      </div>
+      <div class="lightbox-caption">
+        <span class="lightbox-caption-cat">Category</span>
+        <h4 class="lightbox-caption-title">Artwork Title</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Real-time Reservation Booking Engine -->
+  <section class="booking-section fade-in-section" id="booking">
+    <div class="container">
+      
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Reservations</span>
+        <h2 class="section-title font-serif">Schedule Your Session</h2>
+      </div>
+
+      <div class="booking-wrapper">
+        <div class="booking-layout">
+          
+          <div class="booking-header">
+            <h3 class="font-serif">Reserve Your Luxury Appointment</h3>
+            <p>Select your desired service, date, preferred artist, and secure a reservation code instantly.</p>
+          </div>
+
+          <!-- Booking Interactive Form -->
+          <form class="booking-form" id="bookingForm">
+            <div class="form-grid">
+              
+              <!-- Name -->
+              <div class="form-group">
+                <label for="bookingName" class="form-label">Full Name</label>
+                <input type="text" id="bookingName" class="form-input" placeholder="e.g. Isabella Rossi" required>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="bookingPhone" class="form-label">Phone Number</label>
+                <input type="tel" id="bookingPhone" class="form-input" placeholder="e.g. +91 9999999999" required>
+              </div>
+
+              <!-- Services Dropdown -->
+              <div class="form-group">
+                <label for="bookingService" class="form-label">Choose Service</label>
+                <select id="bookingService" class="form-select" required>
+                  <option value="" disabled selected>Select a signature treatment...</option>
+                  <optgroup label="Hair Couture">
+                    <option value="Haircut & Signature Blowout">Haircut & Signature Blowout</option>
+                    <option value="Balayage & Couture Highlights">Balayage & Couture Highlights</option>
+                  </optgroup>
+                  <optgroup label="Skin & Spa">
+                    <option value="HydraGlow Luxury Facial">HydraGlow Luxury Facial</option>
+                    <option value="Radiant Gold Glow Spa">Radiant Gold Glow Spa</option>
+                  </optgroup>
+                  <optgroup label="Bridal & Makeup">
+                    <option value="HD Royal Bridal Makeover">HD Royal Bridal Makeover</option>
+                    <option value="Red Carpet Evening Makeup">Red Carpet Evening Makeup</option>
+                  </optgroup>
+                  <optgroup label="Nail Design">
+                    <option value="Couture Gel Nail Extensions">Couture Gel Nail Extensions</option>
+                    <option value="Bespoke 3D Art & Manicure">Bespoke 3D Art & Manicure</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <!-- Stylist Dropdown -->
+              <div class="form-group">
+                <label for="bookingStylist" class="form-label">Preferred Stylist</label>
+                <select id="bookingStylist" class="form-select">
+                  <option value="" selected>No preference (First Available)</option>
+                  <option value="Elena Rostova">Elena Rostova (Hair Specialist)</option>
+                  <option value="Sarah Jenkins">Sarah Jenkins (Bridal Master)</option>
+                  <option value="Aisha Khan">Aisha Khan (Skin Aesthetician)</option>
+                  <option value="Mia Valentina">Mia Valentina (Nail Artist)</option>
+                </select>
+              </div>
+
+              <!-- Date Picker -->
+              <div class="form-group">
+                <label for="bookingDate" class="form-label">Select Date</label>
+                <input type="date" id="bookingDate" class="form-input" required>
+              </div>
+
+              <!-- Time Slot selector -->
+              <div class="form-group">
+                <label class="form-label">Select Available Time</label>
+                <div class="slots-container" id="slotsContainer">
+                  <p style="grid-column: span 3; font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: 0.4rem;">Please select a date first</p>
+                </div>
+              </div>
+
+              <!-- Special Notes -->
+              <div class="form-group full-width">
+                <label for="bookingNotes" class="form-label">Special Notes / Requests</label>
+                <textarea id="bookingNotes" class="form-textarea" placeholder="e.g. Allergies to products, specific request, styling instructions..."></textarea>
+              </div>
+
+            </div>
+
+            <div class="booking-submit-wrapper">
+              <button type="submit" class="btn btn-primary booking-submit-btn">
+                Confirm Reservation
+                <i class="btn-icon" data-lucide="calendar-check" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Receipt Ticket Modal -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="ticket" id="bookingTicket">
+      
+      <div class="ticket-header">
+        <div class="ticket-header-logo">NEW LOOK</div>
+        <div class="ticket-header-subtitle">Luxury Salon Ticket</div>
+      </div>
+      
+      <div class="ticket-perforation">
+        <div class="ticket-perforation-line"></div>
+      </div>
+      
+      <div class="ticket-body">
+        <div class="ticket-title">Booking Confirmed!</div>
+        
+        <div class="ticket-details">
+          
+          <div class="ticket-row">
+            <span class="ticket-label">Client Name:</span>
+            <span class="ticket-value" id="ticketClientName">John Doe</span>
+          </div>
+
+          <div class="ticket-row">
+            <span class="ticket-label">Phone:</span>
+            <span class="ticket-value" id="ticketPhone">9999999999</span>
+          </div>
+
+          <div class="ticket-row">
+            <span class="ticket-label">Treatment:</span>
+            <span class="ticket-value highlight" id="ticketService">Service</span>
+          </div>
+
+          <div class="ticket-row">
+            <span class="ticket-label">Stylist Assigned:</span>
+            <span class="ticket-value" id="ticketStylist">Stylist</span>
+          </div>
+
+          <div class="ticket-row">
+            <span class="ticket-label">Scheduled Date:</span>
+            <span class="ticket-value" id="ticketDate">Date</span>
+          </div>
+
+          <div class="ticket-row">
+            <span class="ticket-label">Time Slot:</span>
+            <span class="ticket-value highlight" id="ticketTime">Time</span>
+          </div>
+
+          <div class="ticket-row" style="border-top: 1px dashed rgba(255,255,255,0.06); margin-top: 0.5rem;">
+          </div>
+
+          <div class="ticket-row">
+            <span class="ticket-label">Ticket Code:</span>
+            <span class="ticket-value" id="ticketCode" style="font-family: monospace; letter-spacing: 0.1em; color: var(--primary-gold);">NL-000000</span>
+          </div>
+
+        </div>
+
+        <div class="ticket-barcode-wrapper">
+          <div class="ticket-barcode"></div>
+          <div class="ticket-barcode-num" id="ticketBarcodeNum">NL000000</div>
+        </div>
+
+        <button class="btn btn-primary ticket-close-btn">Close Ticket</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Testimonials Carousel slider -->
+  <section class="testimonials-section fade-in-section">
+    <div class="container">
+      
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Client Love</span>
+        <h2 class="section-title font-serif">Words From Our Guests</h2>
+      </div>
+
+      <div class="testimonials-wrapper">
+        <div class="testimonial-slider">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="testimonial-stars">
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+            </div>
+            <p class="testimonial-quote">"The Balayage color and style Elena did for my hair was absolutely mind-blowing. I received countless compliments at my event. The salon ambience is extremely premium, feels like a boutique sanctuary."</p>
+            <div class="testimonial-author-wrapper">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Isabella Rossi">
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-name">Isabella Rossi</h4>
+                <p class="testimonial-service-tag">Hair Balayage Service</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+            </div>
+            <p class="testimonial-quote">"Sarah Jenkins did my makeup for my wedding, and I couldn't have been happier! Flawless, glowing HD finish that lasted literally all day under hot lights. Outstanding service and staff!"</p>
+            <div class="testimonial-author-wrapper">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Priya Sen">
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-name">Priya Sen</h4>
+                <p class="testimonial-service-tag">HD Royal Bridal Makeup</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+              <i class="testimonial-star-icon" data-lucide="star"></i>
+            </div>
+            <p class="testimonial-quote">"The HydraGlow facial is worth every penny. My skin was incredibly hydrated and radiant. Aisha is extremely knowledgeable and recommends the perfect routine. Simply the best parlour in the city."</p>
+            <div class="testimonial-author-wrapper">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=150" alt="Victoria Vance">
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-name">Victoria Vance</h4>
+                <p class="testimonial-service-tag">HydraGlow Skin Facial</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Pagination Indicators -->
+        <div class="slider-dots"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Hours Contact Section -->
+  <section class="contact-section fade-in-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Contact details -->
+        <div class="contact-info-panel">
+          <div>
+            <span class="section-subtitle" style="text-align: left; margin: 0;">Get In Touch</span>
+            <h2 class="section-title font-serif" style="margin-bottom: 0.5rem; text-align: left;">Visit The Sanctuary</h2>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 300;">Reach out to secure booking sessions, private events, or bridal consultations.</p>
+          </div>
+
+          <div class="contact-card-grid">
+            
+            <!-- Address Card -->
+            <div class="contact-item-card">
+              <div class="contact-card-icon-wrapper">
+                <i class="contact-card-icon" data-lucide="map-pin"></i>
+              </div>
+              <h3 class="contact-card-title">Address</h3>
+              <p class="contact-card-details">102 Elegant Towers, Ring Road<br>Opp. Regent Square Mall, Sector 4<br>New Delhi, PIN 110001</p>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-item-card">
+              <div class="contact-card-icon-wrapper">
+                <i class="contact-card-icon" data-lucide="phone"></i>
+              </div>
+              <h3 class="contact-card-title">Call Us</h3>
+              <p class="contact-card-details">Main: +91 99999 99999<br>Appointments: +91 98888 88888<br>Email: booking@newlookparlour.com</p>
+            </div>
+
+          </div>
+
+          <!-- Fallback Map Card -->
+          <div class="map-card-wrapper">
+            <div class="map-fallback">
+              <i class="map-icon" data-lucide="map-pin"></i>
+              <h4 class="map-location-title">New Look Beauty Parlour</h4>
+              <p class="map-location-address">102 Elegant Towers, Ring Road, Opp. Regent Square Mall, Sector 4, New Delhi</p>
+              <a href="https://maps.google.com/?q=Elegant+Towers+Ring+Road+New+Delhi" target="_blank" class="btn btn-secondary" style="padding: 0.6rem 1.4rem; font-size: 0.72rem;">
+                Open in Google Maps
+                <i class="btn-icon" data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Open Timings Panel -->
+        <div class="timings-panel">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h3 class="font-serif" style="margin-bottom: 0;">Salon Opening Hours</h3>
+            <div id="inlineHoursActions" style="display: flex; gap: 0.5rem;">
+              <button id="inlineEditHoursBtn" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.65rem; display: inline-flex; align-items: center;">
+                <i data-lucide="edit-3" style="width: 12px; height: 12px; margin-right: 0.3rem;"></i> Edit
+              </button>
+              <button id="inlineSaveHoursBtn" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.65rem; display: none;">Save</button>
+              <button id="inlineCancelHoursBtn" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.65rem; display: none;">Cancel</button>
+            </div>
+          </div>
+          <table class="timings-table">
+            <tbody id="timingsTableBody">
+              <!-- Populated dynamically via script.js -->
+            </tbody>
+          </table>
+          <p style="font-size: 0.72rem; color: var(--primary-gold); margin-top: 1.5rem; text-transform: uppercase; letter-spacing: 0.08em; text-align: center; font-weight: 500;">
+            * Walk-ins accepted subject to availability.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Admin Control Settings & Authentication Dashboard -->
+  <div class="booking-modal" id="adminDashboardModal">
+    <div class="ticket" style="max-width: 500px;">
+      <div class="ticket-header">
+        <div class="ticket-header-logo">ADMIN PORTAL</div>
+        <div class="ticket-header-subtitle">New Look Gallery Manager</div>
+      </div>
+      
+      <div class="ticket-perforation">
+        <div class="ticket-perforation-line"></div>
+      </div>
+
+      <div class="ticket-body" style="padding: 1.8rem;">
+        
+        <!-- Tab Selectors -->
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.8rem;">
+          <button class="btn btn-secondary active" id="tabAuthBtn" style="padding: 0.5rem 1rem; font-size: 0.68rem; flex-grow: 1;">Login</button>
+          <button class="btn btn-secondary" id="tabHoursBtn" style="padding: 0.5rem 1rem; font-size: 0.68rem; flex-grow: 1; display: none;">Hours Manager</button>
+          <button class="btn btn-secondary" id="tabConfigBtn" style="padding: 0.5rem 1rem; font-size: 0.68rem; flex-grow: 1;">DB Configuration</button>
+        </div>
+
+        <!-- AUTH DIVISION -->
+        <div id="divAuthPanel">
+          <!-- Login Form -->
+          <form id="adminLoginForm">
+            <h4 class="font-serif" style="color: var(--white); font-size: 1.2rem; margin-bottom: 1rem;">Administrator Sign-in</h4>
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label for="adminEmail" class="form-label">Admin Email</label>
+              <input type="email" id="adminEmail" class="form-input" placeholder="admin@newlook.com" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="adminPassword" class="form-label">Password</label>
+              <input type="password" id="adminPassword" class="form-input" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+          </form>
+
+          <!-- Logged In Dashboard actions -->
+          <div id="adminActionPanel" style="display: none;">
+            <div style="text-align: center; margin-bottom: 1.5rem;">
+              <i data-lucide="shield-check" style="width: 44px; height: 44px; color: var(--primary-gold); margin-bottom: 0.5rem;"></i>
+              <h4 style="color: var(--white);">Welcome, Salon Manager</h4>
+              <p style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.2rem;">You are connected to Supabase dynamic gallery.</p>
+            </div>
+            <button class="btn btn-primary" id="dashboardAddPhotoBtn" style="width: 100%; margin-bottom: 0.8rem;">
+              <i data-lucide="plus" style="width: 14px; height: 14px; margin-right: 0.4rem;"></i>
+              Upload New Photo
+            </button>
+            <button class="btn btn-secondary" id="adminLogoutBtn" style="width: 100%; border-color: var(--accent-rose); color: var(--accent-rose);">Sign Out</button>
+          </div>
+        </div>
+
+        <!-- CONFIGURATION SETTINGS DIVISION -->
+        <div id="divConfigPanel" style="display: none;">
+          <form id="dbConfigForm">
+            <h4 class="font-serif" style="color: var(--white); font-size: 1.2rem; margin-bottom: 0.8rem;">Supabase Connection Details</h4>
+            <p style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 1.2rem; line-height: 1.4;">
+              Provide credentials from your Supabase Project Settings API dashboard. These tokens are saved locally in your browser's secure workspace.
+            </p>
+            
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label for="configUrl" class="form-label">Supabase Project URL</label>
+              <input type="url" id="configUrl" class="form-input" placeholder="https://xxxxxx.supabase.co" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="configKey" class="form-label">Supabase Anon Public API Key</label>
+              <input type="text" id="configKey" class="form-input" placeholder="eyJhbGciOi..." required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Save Credentials</button>
+          </form>
+
+          <!-- Quick Setup Guide -->
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed rgba(255,255,255,0.06); font-size: 0.72rem; color: var(--text-secondary); line-height: 1.5;">
+            <div style="font-weight: 600; color: var(--primary-gold); margin-bottom: 0.4rem;">Supabase Database Setup Guide:</div>
+            1. Create table: <strong>gallery_items</strong><br>
+            2. Columns: <strong>id</strong> (uuid, primary), <strong>title</strong> (text), <strong>category</strong> (text), <strong>image_url</strong> (text), <strong>description</strong> (text)<br>
+            3. In Storage, create a public bucket named: <strong>gallery-images</strong>
+          </div>
+        </div>
+
+        <!-- HOURS MANAGER PANEL (Visible only when logged in) -->
+        <div id="divHoursPanel" style="display: none;">
+          <form id="adminHoursForm">
+            <h4 class="font-serif" style="color: var(--white); font-size: 1.2rem; margin-bottom: 0.8rem;">Customize Operational Hours</h4>
+            <p style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 1.2rem; line-height: 1.4;">
+              Modify business hours for each day. Check "Highlight" to emphasize specific days (e.g. weekends).
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.8rem; max-height: 280px; overflow-y: auto; padding-right: 0.5rem; margin-bottom: 1.5rem;" class="admin-hours-fields">
+              <!-- 7 Days Rows (Monday to Sunday) -->
+              <div class="hours-edit-row" data-day="Monday">
+                <span class="hours-edit-day" style="width: 90px; display: inline-block; font-size: 0.78rem; font-weight: 500;">Monday</span>
+                <input type="text" class="form-input hours-edit-input" placeholder="09:00 AM - 08:30 PM" required style="width: calc(100% - 200px); display: inline-block; padding: 0.5rem 0.8rem; margin: 0 0.5rem;">
+                <label class="hours-edit-chk-label" style="font-size: 0.75rem; color: var(--text-secondary); cursor: pointer;">
+                  <input type="checkbox" class="hours-edit-chk"> Highlight
+                </label>
+              </div>
+              <div class="hours-edit-row" data-day="Tuesday">
+                <span class="hours-edit-day" style="width: 90px; display: inline-block; font-size: 0.78rem; font-weight: 500;">Tuesday</span>
+                <input type="text" class="form-input hours-edit-input" placeholder="09:00 AM - 08:30 PM" required style="width: calc(100% - 200px); display: inline-block; padding: 0.5rem 0.8rem; margin: 0 0.5rem;">
+                <label class="hours-edit-chk-label" style="font-size: 0.75rem; color: var(--text-secondary); cursor: pointer;">
+                  <input type="checkbox" class="hours-edit-chk"> Highlight
+                </label>
+              </div>
+              <div class="hours-edit-row" data-day="Wednesday">
+                <span class="hours-edit-day" style="width: 90px; display: inline-block; font-size: 0.78rem; font-weight: 500;">Wednesday</span>
+                <input type="text" class="form-input hours-edit-input" placeholder="09:00 AM - 08:30 PM" required style="width: calc(100% - 200px); display: inline-block; padding: 0.5rem 0.8rem; margin: 0 0.5rem;">
+                <label class="hours-edit-chk-label" style="font-size: 0.75rem; color: var(--text-secondary); cursor: pointer;">
+                  <input type="checkbox" class="hours-edit-chk"> Highlight
+                </label>
+              </div>
+              <div class="hours-edit-row" data-day="Thursday">
+                <span class="hours-edit-day" style="width: 90px; display: inline-block; font-size: 0.78rem; font-weight: 500;">Thursday</span>
+                <input type="text" class="form-input hours-edit-input" placeholder="09:00 AM - 08:30 PM" required style="width: calc(100% - 200px); display: inline-block; padding: 0.5rem 0.8rem; margin: 0 0.5rem;">
+                <label class="hours-edit-chk-label" style="font-size: 0.75rem; color: var(--text-secondary); cursor: pointer;">
+                  <input type="checkbox" class="hours-edit-chk"> Highlight
+                </label>
+              </div>
+              <div class="hours-edit-row" data-day="Friday">
+                <span class="hours-edit-day" style="width: 90px; display: inline-block; font-size: 0.78rem; font-weight: 500;">Friday</span>
+                <input type="text" class="form-input hours-edit-input" placeholder="09:00 AM - 09:30 PM" required style="width: calc(100% - 200px); display: inline-block; padding: 0.5rem 0.8rem; margin: 0 0.5rem;">
+                <label class="hours-edit-chk-label" style="font-size: 0.75rem; color: var(--text-secondary); cursor: pointer;">
+                  <input type="checkbox" class="hours-edit-chk"> Highlight
+                </label>
+              </div>
+              <div class="hours-edit-row" data-day="Saturday">
+                <span class="hours-edit-day" style="width: 90px; display: inline-block; font-size: 0.78rem; font-weight: 500;">Saturday</span>
+                <input type="text" class="form-input hours-edit-input" placeholder="08:00 AM - 09:30 PM" required style="width: calc(100% - 200px); display: inline-block; padding: 0.5rem 0.8rem; margin: 0 0.5rem;">
+                <label class="hours-edit-chk-label" style="font-size: 0.75rem; color: var(--text-secondary); cursor: pointer;">
+                  <input type="checkbox" class="hours-edit-chk"> Highlight
+                </label>
+              </div>
+              <div class="hours-edit-row" data-day="Sunday">
+                <span class="hours-edit-day" style="width: 90px; display: inline-block; font-size: 0.78rem; font-weight: 500;">Sunday</span>
+                <input type="text" class="form-input hours-edit-input" placeholder="09:00 AM - 05:00 PM" required style="width: calc(100% - 200px); display: inline-block; padding: 0.5rem 0.8rem; margin: 0 0.5rem;">
+                <label class="hours-edit-chk-label" style="font-size: 0.75rem; color: var(--text-secondary); cursor: pointer;">
+                  <input type="checkbox" class="hours-edit-chk"> Highlight
+                </label>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Save Hours</button>
+          </form>
+        </div>
+
+        <button class="btn btn-secondary" id="closeAdminBtn" style="margin-top: 1.5rem; width: 100%;">Close Panel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Gallery Photo Modal (Visible only to Admin) -->
+  <div class="booking-modal" id="addPhotoModal">
+    <div class="ticket" style="max-width: 460px;">
+      <div class="ticket-header">
+        <div class="ticket-header-logo">NEW UPLOAD</div>
+        <div class="ticket-header-subtitle">Publish to Public Portfolio</div>
+      </div>
+      
+      <div class="ticket-perforation">
+        <div class="ticket-perforation-line"></div>
+      </div>
+
+      <form class="ticket-body" id="addPhotoForm" style="padding: 2rem;">
+        <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+          
+          <div class="form-group">
+            <label for="photoTitle" class="form-label">Title / Style Name</label>
+            <input type="text" id="photoTitle" class="form-input" placeholder="e.g. Vintage Bridal Bun" required>
+          </div>
+
+          <div class="form-group">
+            <label for="photoCategory" class="form-label">Category</label>
+            <select id="photoCategory" class="form-select" required>
+              <option value="" disabled selected>Select category...</option>
+              <option value="hair">Hair Couture</option>
+              <option value="skin">Skin & Spa</option>
+              <option value="makeup">Bridal & Makeup</option>
+              <option value="nails">Nail Art</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="photoMediaType" class="form-label">Media Type</label>
+            <select id="photoMediaType" class="form-select" required>
+              <option value="image" selected>Photo</option>
+              <option value="video">Video</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="photoDesc" class="form-label">Short Description</label>
+            <input type="text" id="photoDesc" class="form-input" placeholder="e.g. A gorgeous classical wave styling with luxury pins..." required>
+          </div>
+
+          <!-- File selector -->
+          <div class="form-group">
+            <label for="photoFile" class="form-label">Choose Media File</label>
+            <input type="file" id="photoFile" class="form-input" accept="image/*,video/*" required style="padding-top: 0.6rem;">
+          </div>
+
+          <!-- Progress loading bar -->
+          <div id="uploadProgressWrapper" style="display: none;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--primary-gold); margin-bottom: 0.3rem;">
+              <span id="uploadProgressText">Uploading...</span>
+              <span id="uploadProgressPercent">0%</span>
+            </div>
+            <div style="width: 100%; height: 4px; background-color: var(--bg-primary); border-radius: 4px; overflow: hidden;">
+              <div id="uploadProgressBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--primary-gold), var(--accent-rose)); transition: width 0.2s ease;"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+          <button type="button" class="btn btn-secondary" id="cancelAddPhotoBtn" style="flex-grow: 1;">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="submitPhotoBtn" style="flex-grow: 1;">Publish</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand details column -->
+        <div class="footer-brand">
+          <a href="#hero" class="logo-wrapper">
+            <img class="footer-logo-img logo-img" src="assets/logo.png" alt="New Look Logo">
+            <div class="logo-text" style="color: var(--white);">
+              NEW LOOK
+              <span>Beauty Parlour</span>
+            </div>
+          </a>
+          <p class="footer-desc">Redefining elegance and enhancing natural beauty with high-end salon treatments, world-class stylists, and organic sanitised environments.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i data-lucide="facebook" style="width: 16px; height: 16px;"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i data-lucide="instagram" style="width: 16px; height: 16px;"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Twitter"><i data-lucide="twitter" style="width: 16px; height: 16px;"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Youtube"><i data-lucide="youtube" style="width: 16px; height: 16px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Links column -->
+        <div class="footer-links-col">
+          <h4 class="footer-title font-serif">Quick Navigation</h4>
+          <div class="footer-links">
+            <a href="#hero"><i data-lucide="chevron-right" style="width: 12px; height: 12px; color: var(--primary-gold);"></i> Home</a>
+            <a href="#services"><i data-lucide="chevron-right" style="width: 12px; height: 12px; color: var(--primary-gold);"></i> Services Menu</a>
+            <a href="#promo"><i data-lucide="chevron-right" style="width: 12px; height: 12px; color: var(--primary-gold);"></i> Offers & Packages</a>
+            <a href="#gallery"><i data-lucide="chevron-right" style="width: 12px; height: 12px; color: var(--primary-gold);"></i> Portfolio Gallery</a>
+            <a href="#team"><i data-lucide="chevron-right" style="width: 12px; height: 12px; color: var(--primary-gold);"></i> Stylist Crew</a>
+            <a href="#booking"><i data-lucide="chevron-right" style="width: 12px; height: 12px; color: var(--primary-gold);"></i> Book Session</a>
+          </div>
+        </div>
+
+        <!-- Newsletter column -->
+        <div class="footer-newsletter">
+          <h4 class="footer-title font-serif">Newsletter Signup</h4>
+          <p class="footer-newsletter-text">Subscribe to receive promotions, expert style guides, and product announcements directly to your inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" aria-label="Newsletter Email Address" required>
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright lines -->
+      <div class="footer-copyright">
+        <div>
+          &copy; 2026 New Look Beauty Parlour. All Rights Reserved. Designed with luxury.
+        </div>
+        <div class="footer-copyright-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">FAQs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Supabase JS Client CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
