@@ -322,20 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Run on page load
   resolveAssetFallbacks();
 
-  function resolveBodyBackground() {
-    const testImg = new Image();
-    const local = 'assets/hero_bg.jpg';
-    const fallback = 'https://images.unsplash.com/photo-1621590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1600';
-    
-    testImg.onload = () => {
-      document.body.style.backgroundImage = `linear-gradient(rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.45)), url('${local}')`;
-    };
-    testImg.onerror = () => {
-      document.body.style.backgroundImage = `linear-gradient(rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.45)), url('${fallback}')`;
-    };
-    testImg.src = local;
-  }
-  resolveBodyBackground();
+
 
   // ==========================================
   // TOAST ALERTS NOTIFICATIONS

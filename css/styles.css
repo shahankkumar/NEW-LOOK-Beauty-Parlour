@@ -59,10 +59,6 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: var(--bg-primary);
-  background-image: linear-gradient(rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.45)), url('https://images.unsplash.com/photo-1621590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1600');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
 }
 
 a {
