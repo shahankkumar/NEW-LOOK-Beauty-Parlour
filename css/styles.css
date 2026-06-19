@@ -465,6 +465,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   overflow: hidden;
   padding-top: var(--header-height);
+  /* Background image directly on hero - most reliable approach */
+  background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=1920');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 .hero-bg-container {
@@ -474,21 +479,19 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   z-index: -2;
-  background-color: #080602;
-  /* CSS fallback if img element fails */
-  background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1920');
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
 }
 
 .hero-bg-image {
   width: 100%;
-  height: 100%;
+  height: 100% !important; /* Override base img { height: auto } */
+  min-height: 100vh;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
+  display: block;
   transform: scale(1.08);
   animation: zoomBg 25s infinite alternate ease-in-out;
-  filter: brightness(0.7) saturate(0.9);
+  filter: brightness(0.65) saturate(0.85);
 }
 
 .hero-overlay {
