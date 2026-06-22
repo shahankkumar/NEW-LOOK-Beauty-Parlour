@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Body Noise overlay - organic texture that sits on top of everything without blocking pointer events */
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  /* Gold-infused dark radial background */
+  body {
+    background: radial-gradient(circle at 50% 0%, #120e04 0%, #050402 50%, #030303 100%) !important;
+    overflow-x: hidden;
+  }
+
+  /* Custom 6px scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #030303;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    transition: background 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37; /* Gold */
+  }
+
+  /* Focus rings and core settings */
+  input, textarea, select {
+    outline: none;
+  }
+}
+
+@layer utilities {
+  /* Selection Style */
+  .selection-luxury::selection {
+    background-color: rgba(212, 175, 87, 0.3);
+    color: #D4AF37;
+  }
+
+  /* Glassmorphism containers */
+  .glass {
+    background: rgba(15, 12, 8, 0.4);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(212, 175, 55, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+  }
+
+  /* Premium Gradient Cards with gold-to-orange borders and background glows */
+  .premium-card {
+    background: linear-gradient(135deg, rgba(20, 16, 10, 0.7) 0%, rgba(5, 5, 5, 0.9) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.12);
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.9);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .premium-card:hover {
+    border-color: rgba(212, 175, 55, 0.45);
+    box-shadow: 0 15px 35px -10px rgba(212, 175, 55, 0.15), 
+                0 0 20px 0 rgba(255, 69, 0, 0.05);
+    transform: translateY(-5px);
+  }
+
+  /* Glass Cards with gradient fills and hover glow borders */
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.1);
+  }
+
+  /* Glass Neon Luxury Gold container styling */
+  .glass-neon {
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glass-neon:hover {
+    border-color: rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.25);
+  }
+
+  /* Text Shadow Golden Glow */
+  .text-glow {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+  }
+
+  .text-glow-subtle {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  }
+
+  /* Multi-color luxury gradient clip */
+  .text-gradient {
+    background: linear-gradient(to right, #D4AF37 0%, #FF4500 50%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Ambient Blur Blobs */
+  .glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
